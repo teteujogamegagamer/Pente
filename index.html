@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paint Mateus</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="toolbar">
+
+<button id="brushTool" title="Pincel">
+<i class="fa-solid fa-paintbrush"></i>
+</button>
+
+<button id="eraserTool" title="Borracha">
+<i class="fa-solid fa-eraser"></i>
+</button>
+
+<button id="textTool" title="Texto">
+<i class="fa-solid fa-font"></i>
+</button>
+
+<button id="imageTool" title="Imagem">
+<i class="fa-solid fa-image"></i>
+</button>
+
+<button id="saveTool" title="Salvar">
+<i class="fa-solid fa-download"></i>
+</button>
+
+<button id="clearBtn" title="Limpar">
+<i class="fa-solid fa-trash"></i>
+</button>
+
+<input type="color" id="colorPicker" value="#000000">
+
+<input
+type="range"
+id="brushSize"
+min="1"
+max="50"
+value="5">
+
+<input
+type="number"
+id="fontSize"
+value="30"
+min="8"
+max="200">
+
+</div>
+
+<input
+type="file"
+id="imageInput"
+accept="image/png,image/jpeg"
+hidden>
+
+<canvas id="canvas"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
